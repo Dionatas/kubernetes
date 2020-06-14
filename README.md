@@ -63,7 +63,7 @@ Embora exista a exigência de no mínimo três nós para a execução do k8s em 
 
 A figura a seguir mostra a arquitetura interna de componentes do k8s.
 
-| ![Arquitetura Kubernetes](https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png) |
+| ![Arquitetura Kubernetes](https://d33wubrfki0l68.cloudfront.net/7016517375d10c702489167e704dcb99e570df85/7bb53/images/docs/components-of-kubernetes.png) |
 |:---------------------------------------------------------------------------------------------:|
 | *Arquitetura Kubernetes*                                                                      |
 

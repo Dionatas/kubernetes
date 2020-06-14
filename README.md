@@ -8,7 +8,8 @@ Orquestrador de Container
   - [Qual distro Linux devo usar?](#qual-distro-linux-devo-usar)
   - [Alguns sites que devemos visitar](#alguns-sites-que-devemos-visitar)
   - [O que é k8s?](#o-que-é-k8s)
-  - [Arquitetura do k8s](#Arquitetura-do-k8s)
+  - [Ecossistema do k8s](#Ecossistema-do-k8s)
+  - [Arquitetura interna do Kubernetes](#Arquitetura-interna-do-Kubernetes)
   - [Portas que devemos nos preocupar](#Portas-que-devemos-nos-preocupar)
   - [Tá, mas qual tipo de aplicação eu devo rodar sobre o k8s?](#Tá-mas-qual-tipo-de-aplicação-eu-devo-rodar-sobre-o-k8s?)
   - [Conceitos importantes do k8s](#Conceitos-importantes-do-k8s)
@@ -46,7 +47,7 @@ O projeto Kubernetes foi desenvolvido pela Google, em meados de 2014, para atuar
 
 Como Kubernetes é uma palavra difícil de se pronunciar - e de se escrever - a comunidade simplesmente o apelidou de **k8s**, seguindo o padrão [i18n](http://www.i18nguy.com/origini18n.html) (a letra "k" seguida por oito letras e o "s" no final), pronunciando-se simplesmente "kates".
 
-## Arquitetura do k8s
+## Ecossistema do k8s
 
 Assim como os demais orquestradores disponíveis, o k8s também segue um modelo *master/slave*, constituindo assim um *cluster*, onde para seu funcionamento devem existir no mínimo três nós: o nó *master*, responsável por padrão apenas pelo gerenciamento do *cluster*, e os demais como *workers*, executores das aplicações que nós queremos executar sobre esse *cluster*.
 
@@ -57,6 +58,8 @@ Embora exista a exigência de no mínimo três nós para a execução do k8s em 
 - [MicroK8S](https://microk8s.io): Desenvolvido pela [Canonical](https://canonical.com), mesma empresa que desenvolve o [Ubuntu](https://ubuntu.com). O MicroK8S pode ser utilizado em diversas distribuições e tem como público alvo desenvolvedores e profissionais de DevOps. Além disso, essa ferramenta pode ser utilizada para ambientes de produção, em especial para *Edge Computing* e IoT;
 
 - [k3s](https://k3s.io): Desenvolvido pela [Rancher Labs](https://rancher.com), é um concorrente direto do MicroK8s, podendo ser executado inclusive em Raspberry Pi.
+
+## Arquitetura interna do Kubernetes
 
 A figura a seguir mostra a arquitetura interna de componentes do k8s.
 
